@@ -25,7 +25,7 @@
 
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
 <title>Voyager VC</title>
 
 
@@ -42,11 +42,20 @@
 
 
 <style>
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('https://cassandraxia.com/voyager/MaisonNeue-Book.woff2') format('woff2'),
+       url('https://cassandraxia.com/voyager/MaisonNeue-Book.woff') format('woff'),
+       url('https://cassandraxia.com/voyager/MaisonNeue-Book.ttf') format('truetype');
+}
+
 *{
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'MaisonNeue', sans-serif;
   box-sizing: border-box;
 }
+
 
 body{
   background: url("bkg.png") no-repeat top center fixed; 
@@ -62,10 +71,12 @@ body{
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin: 0;
 }
 
 html{
   height: 100%;
+  background-color: #F5F5F5;
 }
 
 .email{
@@ -89,7 +100,7 @@ a{
 </head>
 
 <body>
-  
+
 <img src="logo.svg" style="width: 80%">
 
 <a href="mailto:hello@voyagervc.com"><div class="email">hello@voyagervc.com</div></a>
