@@ -65,14 +65,27 @@ body{
   -o-background-size: cover;
   background-size: cover;
   box-sizing: content-box;
+  height: 100%;
+  margin: 0;
+}
 
+.main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  margin: 0;
 }
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 
 html{
   height: 100%;
@@ -80,19 +93,19 @@ html{
 }
 
 .email{
-  font-size: 28px; 
-  margin-top: 24px;
+  margin: 40px; 
+  width: 28px;
 }
+
 a{
   text-decoration: none;
 }
 
-@media (max-width: 800px){
+/*@media (max-width: 800px){
   .email{
-    font-size: 20px; 
-    margin-top: 16px;
+    margin: 20px; 
   }
-}
+}*/
 
 
 </style>
@@ -101,9 +114,17 @@ a{
 
 <body>
 
+<div class="main">
 <img src="logo.svg" style="width: 80%">
 
-<a href="mailto:hello@voyagervc.com"><div class="email">hello@voyagervc.com</div></a>
+<div class="footer">
+<a href="mailto:hello@voyagervc.com">
+
+  <img src="email.svg" class="email">
+</a>
+</div>
+
+</div>
 
 
 </body>
